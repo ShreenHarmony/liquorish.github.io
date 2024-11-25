@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Indie Rock band based in the south of England performing covers and own material.">
+    <title>Liquor-ish - Indie Rock Band</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="icon" sizes="192x192" href="android-icon.png">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+        body {
+            font-family: 'Permanent Marker', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Round logo styling */
+        .round-logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 0 10px #000, 0 0 15px #ff1744;
+            margin-top: 20px;
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 3rem;
+            color: #ff1744;
+            text-shadow: 3px 3px 10px #000, 0 0 15px #ff1744;
+        }
+
+        .profiles,
+        .videos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .profile {
+            width: 150px;
+            text-align: center;
+            transform: scale(1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px dashed #ff1744;
+            padding: 10px;
+            background-color: rgba(255, 23, 68, 0.1);
+        }
+
+        .profile:hover {
+            transform: rotate(-5deg) scale(1.1);
+            box-shadow: 0 0 20px #ff1744;
+        }
+
+        .profile img {
+            width: 100%;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 0 10px #000, 0 0 20px #ff1744;
+        }
+
+        .profile p {
+            margin-top: 10px;
+            font-size: 1.3rem;
+            color: #ff1744;
+        }
+
+        iframe {
+            width: 300px;
+            height: 170px;
+            margin: 10px;
+            border: 3px solid #ff1744;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5), 0 0 30px #ff1744;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        iframe:hover {
+            transform: rotate(-3deg) scale(1.05);
+            box-shadow: 0 0 25px #ff1744, 0 0 40px #fff;
+        }
+
+        .social-links {
+            margin: 20px;
+            padding: 10px 0;
+            background-color: #111;
+            border: 2px solid #ff1744;
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #000, 0 0 10px #ff1744;
+        }
+
+        .social-links a {
+            margin: 0 15px;
+            color: #ff1744;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+            text-shadow: 0 0 5px #ff1744, 0 0 10px #fff;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* Icons at the bottom */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .social-icons a {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #111;
+            box-shadow: 0 0 15px #000, 0 0 10px #ff1744;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            background-color: #ff1744;
+            transform: scale(1.1);
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Round logo at the top -->
+    <img src="logo.jpeg" alt="Liquor-ish" class="round-logo">
+
+    <!-- Main band name -->
+    <h1>Liquor-ish</h1>
+
+    <section class="profiles">
+        <div class="profile">
+            <img src="jude.png" alt="Jude">
+            <p>Jude</p>
+        </div>
+        <div class="profile">
+            <img src="oliver.png" alt="Oliver">
+            <p>Oliver</p>
+        </div>
+        <div class="profile">
+            <img src="james.png" alt="James">
+            <p>James</p>
+        </div>
+    </section>
+
+    <section class="videos">
+        <iframe src="https://www.youtube.com/embed/61MkPpm5Jcs" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/NcrFdbQzmAQ" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <div class="social-links">
+        <a href="https://linktr.ee/theliquorishband" target="_blank">LinkTree</a>
+        <a href="https://www.instagram.com/liquorish_band/?hl=en" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com/@LiquorishBand" target="_blank">YouTube</a>
+        <a href="https://www.tiktok.com/@liquor_ish" target="_blank">TikTok</a>
+        <a href="https://open.spotify.com/artist/5NdX2WNwaqywtJm6dTDA4c" target="_blank">Spotify</a>
+        <a href="mailto:TheLiquorishBand@gmail.com">Email Us</a>
+    </div>
+
+    <footer>
+        &copy; 2024 Liquor-ish. All rights reserved.
+    </footer>
+</body>
+
+</html>
