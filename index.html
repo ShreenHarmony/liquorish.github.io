@@ -11,6 +11,10 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="icon" sizes="192x192" href="android-icon.png">
+    <!-- Lite YouTube Embed -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed/src/lite-yt-embed.css">
+<script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed/src/lite-yt-embed.js" defer></script>
+
 
     <script>
         if ('serviceWorker' in navigator) {
@@ -190,10 +194,8 @@
     </section>
 
     <section class="videos">
-        <iframe src="https://www.youtube.com/embed/61MkPpm5Jcs" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/NcrFdbQzmAQ" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <lite-youtube videoid="61MkPpm5Jcs" title="Liquor-ish Band Video 1"></lite-youtube>
+        <lite-youtube videoid="NcrFdbQzmAQ" title="Liquor-ish Band Video 2"></lite-youtube>
     </section>
 
     <div class="social-links">
