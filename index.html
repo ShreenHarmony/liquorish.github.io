@@ -21,20 +21,6 @@
         integrity="sha512-l8cIzs5aAJutiOPIyW/9PAvDevwTA8F17Pmge51rwmKBkjZ47tap3kRv+pI8JX9owkkBpRMuOIUE7v+Rg6os9w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js')
-                .then(registration => {
-                    console.log('Service Worker registered with scope:', registration.scope);
-                })
-                .catch(error => {
-                    console.error('Service Worker registration failed:', error);
-                });
-        }
-    </script>
-
-
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
