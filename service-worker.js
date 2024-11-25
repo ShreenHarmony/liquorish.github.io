@@ -23,6 +23,20 @@ self.addEventListener('install', event => {
   );
 });
 
+self.addEventListener('fetch', (event) => {
+    // Skip requests for external resources like Lite YouTube
+    if (event.request.url.includes('lite-yt-embed')) {
+        return;
+    }
+
+    event.respondWith(
+        caches.match(event.request).then((response) => {
+            return response || fetch(event.request);
+        })
+    );
+});
+
+
 // Activate Event
 self.addEventListener('activate', event => {
   event.waitUntil(
