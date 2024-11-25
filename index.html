@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Indie Rock band based in the south of England performing covers and own material.">
+    <meta name="description"
+        content="Indie Rock band based in the south of England performing covers and own material.">
     <title>Liquor-ish - Indie Rock Band</title>
 
     <!-- Favicons -->
@@ -12,22 +13,22 @@
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="icon" sizes="192x192" href="android-icon.png">
     <!-- Lite YouTube Embed -->
-<link rel="stylesheet" href="lite-yt-embed.css">
-<script src="lite-yt-embed.js" defer></script>
+    <link rel="stylesheet" href="lite-yt-embed.css">
+    <script src="lite-yt-embed.js" defer></script>
 
 
     <script>
         if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('/service-worker.js')
-            .then(registration => {
-              console.log('Service Worker registered with scope:', registration.scope);
-            })
-            .catch(error => {
-              console.error('Service Worker registration failed:', error);
-            });
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(registration => {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch(error => {
+                    console.error('Service Worker registration failed:', error);
+                });
         }
-      </script>
-      
+    </script>
+
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
@@ -194,8 +195,16 @@
     </section>
 
     <section class="videos">
-        <lite-youtube videoid="NcrFdbQzmAQ" playlabel="Play: Crayon Physics Deluxe - Trailer HD"></lite-youtube>
-        <lite-youtube videoid="61MkPpm5Jcs" playlabel="Play: Crayon Physics Deluxe - Trailer HD"></lite-youtube>
+        <lite-youtube videoid="NcrFdbQzmAQ"
+            style="background-image: url('https://i.ytimg.com/vi/goiWrNiaT0I/hqdefault.jpg');">
+            <a href="https://youtube.com/watch?v=goiWrNiaT0I" class="lyt-playbtn" title="Play Video">
+            </a>
+        </lite-youtube>
+        <lite-youtube videoid="61MkPpm5Jcs"
+            style="background-image: url('https://i.ytimg.com/vi/goiWrNiaT0I/hqdefault.jpg');">
+            <a href="https://youtube.com/watch?v=goiWrNiaT0I" class="lyt-playbtn" title="Play Video">
+            </a>
+        </lite-youtube>
     </section>
 
     <div class="social-links">
