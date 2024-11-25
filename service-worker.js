@@ -1,4 +1,4 @@
-const CACHE_NAME = 'liquorish-site-v2';
+const CACHE_NAME = 'liquorish-site-v3';
 const CACHE_ASSETS = [
   '/', 
   '/logo.jpeg',
