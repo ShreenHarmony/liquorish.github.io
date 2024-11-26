@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Indie Rock band based in the south of England performing covers and own material.">
+    <meta name="description"
+        content="Indie Rock band based in the south of England performing covers and own material.">
     <title>Liquor-ish - Indie Rock Band</title>
 
     <!-- Favicons -->
@@ -13,10 +14,19 @@
     <link rel="icon" sizes="192x192" href="android-icon.png">
 
     <!-- Preload Font -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" as="style"
+        onload="this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap">
     </noscript>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.3/lite-yt-embed.min.js"
+        integrity="sha512-l8cIzs5aAJutiOPIyW/9PAvDevwTA8F17Pmge51rwmKBkjZ47tap3kRv+pI8JX9owkkBpRMuOIUE7v+Rg6os9w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.3/lite-yt-embed.min.css"
+        integrity="sha512-jGFXuWMxJUKzdfBmoyqCXz9k2AU3Z/ZNoayoUPEBAtJZjHbTbw50AxTR1ICVPQJbSamH9ny1JwOur0x4WOdcWQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         body {
@@ -83,7 +93,7 @@
             color: #ff1744;
         }
 
-        iframe {
+        .nsVid {
             width: 300px;
             height: 170px;
             margin: 10px;
@@ -92,7 +102,7 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        iframe:hover {
+        .nsVid:hover {
             transform: rotate(-3deg) scale(1.05);
             box-shadow: 0 0 25px #ff1744, 0 0 40px #fff;
         }
@@ -177,10 +187,19 @@
             <p>James</p>
         </div>
     </section>
-
     <section class="videos">
-        <iframe src="https://www.youtube.com/embed/61MkPpm5Jcs" frameborder="0" loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/NcrFdbQzmAQ" frameborder="0" loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <lite-youtube class="nsVid" videoid="61MkPpm5Jcs"
+            style="background-image: url('https://i.ytimg.com/vi/61MkPpm5Jcs/hqdefault.jpg');">
+            <a href="https://youtube.com/watch?v=61MkPpm5Jcs" class="lyt-playbtn" title="Play Video">
+                <span class="lyt-visually-hidden">Play Video: Crayon Physics Deluxe - Trailer HD</span>
+            </a>
+        </lite-youtube>
+        <lite-youtube class="nsVid" videoid="NcrFdbQzmAQ"
+            style="background-image: url('https://i.ytimg.com/vi/NcrFdbQzmAQ/hqdefault.jpg');">
+            <a href="https://youtube.com/watch?v=NcrFdbQzmAQ" class="lyt-playbtn" title="Play Video">
+                <span class="lyt-visually-hidden">Play Video: Crayon Physics Deluxe - Trailer HD</span>
+            </a>
+        </lite-youtube>
     </section>
 
     <div class="social-links">
